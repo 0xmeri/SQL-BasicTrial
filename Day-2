@@ -1,0 +1,46 @@
+ORDER BY Syntax
+--SELECT column1, column2, ...
+ FROM table_name
+ ORDER BY column1, column2, ... ASC|DESC;
+ 
+ --SELECT * FROM Customers
+   ORDER BY Country;
+   
+ --SELECT * FROM Customers
+   ORDER BY Country DESC;
+   
+INSERT INTO Example
+
+--INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+  VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+  
+DELETE Syntax
+--DELETE FROM table_name WHERE condition;
+
+The SELECT TOP clause is used to specify the number of records to return.
+SQL TOP, LIMIT and FETCH FIRST Examples
+
+TOP Syntax
+SELECT TOP 3 * FROM Customers;
+
+LIMIT Syntax
+SELECT * FROM Customers
+LIMIT 3;
+
+FETCH Syntax
+SELECT * FROM Customers
+FETCH FIRST 3 ROWS ONLY;
+
+Aggregate Functions 
+(SUM MIN MAX AVG COUNT )
+
+The COUNT() function returns the number of rows that matches a specified criterion.
+SELECT COUNT(*) FROM table_name
+The following SQL statement finds the price of the cheapest product:
+--SELECT MIN(AMOUNT) FROM table_name
+The MAX() function returns the largest value of the selected column
+--MAX(AMOUNT) FROM table_name 
+The SUM() function returns the total sum of a numeric column. 
+--SELECT SUM(AMOUNT) FROM table_name
+The AVG() function returns the average value of a numeric column. 
+--SELECT AVG(AMOUNT) FROM tabl_name
