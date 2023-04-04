@@ -1,0 +1,65 @@
+SELECT Syntax: 
+--SELECT column1, column2,..
+  FROM table_name;
+
+If you want to select all the fields available in the table, use the following syntax:
+--SELECT * FROM Customers 
+
+The following SQL statement selects the "CustomerName" and "City" columns from the "Customers" table:
+--SELECT CustomerName, City FROM Customers;
+
+The following SQL statement selects only the DISTINCT values from the "Country" column in the "Customers" table:
+--SELECT DISTINCT Country FROM Customers;
+
+WHERE Syntax
+--SELECT column1, column2,..
+  FROM table_name
+  WHERE condition;
+  
+Example: The following SQL statement selects all the customers from the country "Mexico", in the "Customers" table:
+--SELECT * FROM Customers
+  WHERE Country='Mexico';
+  
+  SELECT * FROM Customers
+  WHERE CustomerID=1;
+
+The SQL AND, OR and NOT Operators
+
+AND Syntax
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 AND condition2 AND condition3 ...;
+---
+SELECT * FROM Customers
+WHERE Country='Germany' AND City='Berlin';
+
+OR Syntax
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 OR condition2 OR condition3 ...;
+---
+SELECT * FROM Customers
+WHERE City='Berlin' OR City='München';
+
+NOT Syntax
+SELECT column1, column2, ...
+FROM table_name
+---
+SELECT * FROM Customers
+WHERE Country='Germany' OR Country='Spain';
+WHERE NOT condition;
+
+You can also combine the AND, OR and NOT operators.
+--SELECT * FROM Customers
+  WHERE Country='Germany' AND (City='Berlin' OR City='München');
+  
+  Between Syntax 
+  SELECT * FROM Customers
+  WHERE age BETWEEN 20 AND 30 
+  
+  IN Syntax
+  SELECT * FROM Customers
+  WHERE City IN('Ağrı' ,'Avşa' ,'Erdek')
+
+  
+  
