@@ -1,0 +1,35 @@
+Veri tipleri
+
+Veri tabanı nelerden oluşur? 
+-tablolar
+-sütunlar ve satırlar. 
+
+Tabloları oluşturmak için sütunlara ihtiyaç vardır. Sütunlarda iki özelliği vardır. 
+-Sütun ismi
+-sütunda tutulacak verinin tipi. 
+
+Burada verinin tipi önemli bir konudur. İhtiyacımız doğrultusunda doğru veri tipini seçmek temeli sağlam atmamızı sağlar. 
+
+* Veri Tiperi * 
+1- SAYISAL VERİ TİPLERİ
+2- METİN VERİ TİPLERİ
+3- TARİH VE SAAT VERİ TİPLERİ gibi veri tipleri ve özellikleri vardır. Buradaki linkte veri tiplerine detaylıca bakılabilir. 
+--
+ https://medium.com/@berkaykosak8/sql-server-veri-tipleri-2a612ebc9f68
+ https://onurkul.com.tr/sql-server-veri-tipleri
+--
+
+--SQL Joins
+A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+
+--Different Types of SQL JOINs
+Here are the different types of the JOINs in SQL:
+
+(INNER) JOIN: Returns records that have matching values in both tables
+LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
+RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
